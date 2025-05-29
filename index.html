@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HappyBirthday</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <script src="./main.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+
+</head>
+<body>
+  <button id="playButton" class="shake" onclick="playMusic()">Click Me</button>
+  <audio id="bgMusic" loop>
+    <source src="hbdsound.mp3" type="audio/mpeg">
+  </audio>
+
+  
+  <!-- Previous Button -->
+  <button id="prev-btn">
+    <i class="fas fa-arrow-circle-left"></i></button>
+
+  <!-- Book -->
+  <div id="book" class="book">
+    <!-- Paper 1 -->
+    <div id="p1" class="paper">
+      <div class="front">
+        <div id="f1" class="front-content"></div>
+      </div>
+      <div class="back">
+        <div id="b1" class="back-content"></div>
+      </div>
+    </div>
+    <!-- Paper 2 -->
+    <div id="p2" class="paper">
+      <div class="front">
+        <div id="f2" class="front-content">
+
+        </div>
+      </div>
+      <div class="back">
+        <div id="b2" class="back-content">
+
+          <!-- <button id="messageBtn clickMe " onclick="startMessages()">Message For You</button> -->
+          <button id="clickMe" class="glowing-button shake">Click Me</button>
+        </div>
+      </div>
+    </div>
+    
+    
+    <!-- Paper 3 --> 
+    <div id="p3" class="paper">
+      <!-- front -->
+      <div class="front">
+        <div id="f3" class="front-content">
+          <div class="container">
+            <div class="message" id="messageBox">
+              <!-- Text will be injected here -->
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        <!-- back -->
+      <div class="back">
+        <div id="b3" class="back-content"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Next Button -->
+  <button id="next-btn">
+    <i class="fas fa-arrow-circle-right"></i>
+  </button>
+</body>
+</html>
